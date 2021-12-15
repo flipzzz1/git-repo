@@ -1,7 +1,6 @@
 import './App.css';
 import Message from "./Message";
 import MessageList from "./MessageList";
-import React, { useState } from 'react';
 import Form from "./Form";
 
 
@@ -13,7 +12,7 @@ function App(props) {
         My first react app
         <h3>Hello, {props.name}</h3>
         <Message msg = "wassup"/>
-        <MessageList handleAddMessage={handleAddMessage} />
+        <MessageList handleAddMessage={handleAddMessage} /> //Не понимаю где я ошибся
         <Form onAddMessage={onAddMessage}/>
       </header>
     </div>
