@@ -4,6 +4,7 @@ import MessageList from "./MessageList";
 import Form from "./Form";
 
 
+
 function App(props) {
   return (
     <div className="App">
@@ -12,7 +13,7 @@ function App(props) {
         My first react app
         <h3>Hello, {props.name}</h3>
         <Message msg = "wassup"/>
-        <MessageList handleAddMessage={handleAddMessage} /> //Не понимаю где я ошибся
+        <MessageList handleAddMessage={handleAddMessage} />
         <Form onAddMessage={onAddMessage}/>
       </header>
     </div>

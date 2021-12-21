@@ -5,7 +5,6 @@ export default function MessageList(props){
     const [messageLst, setMessageLst] = useState([]);
     const handleAddMessage = (newMessage) =>
         setMessageLst((prevMessageList) => [...prevMessageList, newMessage])
-
     return (
         <div>
             {messageLst.map(({text, author}) =>
@@ -13,6 +12,7 @@ export default function MessageList(props){
                     {author}, {text}
                 </div>
             ))}
+
         </div>
     );
 }
